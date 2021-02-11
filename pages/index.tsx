@@ -1,14 +1,14 @@
-import styles from "./index.module.scss";
+import React from "react";
+import Link from "next/link";
 
-function Heading({ heading }) {
-  return <h1 className={styles.red}>{heading}</h1>;
-}
-
-export default function Home() {
+const Welcome = () => {
   return (
     <div>
-      <Heading className="title" heading="Hello World" />
-      <h1>Hello</h1>
+      <Link href="cips">
+        <a>My Blog</a>
+      </Link>{" "}
     </div>
   );
-}
+};
+
+export default Welcome;
